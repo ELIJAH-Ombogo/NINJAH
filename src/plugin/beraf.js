@@ -26,26 +26,26 @@ const alive = async (m, Matrix) => {
     image.print(font, x, y, timeString, width, Jimp.HORIZONTAL_ALIGN_CENTER | Jimp.VERTICAL_ALIGN_MIDDLE);
     const buffer = await image.getBufferAsync(Jimp.MIME_PNG);
     
-    const uptimeMessage = `┏━━━━❐
-┃『TREX MD 』
+    const uptimeMessage = `_______________★
+┃『NINJAH MD 』
 ┗
 ┏
 ┃『ᴡᴀ ᴄʜᴀɴɴᴇʟ』
-┃❑ https://whatsapp.com/channel/0029VajJoCoLI8YePbpsnE3q
+┃❑ https://whatsapp.com/channel/0029VaxtTRHGZNCoIcJkWs0a
 ┗
 ┏
 ┃『ᴡᴀ ɢʀᴏᴜᴘ 』
-┃❐ https://whatsapp.com/channel/0029VajJoCoLI8YePbpsnE3q
+┃❐ https://whatsapp.com/channel/0029VaxtTRHGZNCoIcJkWs0a
 ┗
 ┏
 ┃『ʏᴏᴜ ᴛᴜʙᴇ 』
-┃❐https://youtube.com/@_BERA_TECH
+┃❐https://youtube.com/@elijahombogo-yx1iv?si=6edVGQsyav66USId
 ┗
 ┏
 ┃『ᴛɪᴋᴛᴏᴋ 』
-┃❐https://www.Instagram.com/@_BERA_TECH
+┃❐IG : e.l.i.l.a.h_o.m.b.o.g.o
 ┗━━━━━━━━━━━━━━━━━━❑
-KEEP USING TREX MD`;
+KEEP USING NINJAH MD`;
     
     const buttons = [
       {
@@ -76,7 +76,7 @@ KEEP USING TREX MD`;
               text: uptimeMessage
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "Powered by TREX MD"
+              text: "Powered by NINJAH MD"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...(await prepareWAMessageMedia({ image: buffer }, { upload: Matrix.waUploadToServer })),
@@ -93,8 +93,8 @@ KEEP USING TREX MD`;
               forwardingScore: 999,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '254743982206@s.whatsapp.net',
-                newsletterName: "BERA TECH",
+                newsletterJid: '254720254797@s.whatsapp.net',
+                newsletterName: "NINJAH TECH",
                 serverMessageId: 143
               }
             }
